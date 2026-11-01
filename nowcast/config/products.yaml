@@ -1,0 +1,347 @@
+generated_utc: '2026-10-29T04:56:00+00:00'
+window:
+  start: '2026-05-01'
+  end: '2026-10-28'
+satellites:
+  INSAT-3DS:
+    collections:
+    - 3SIMG_L1B_STD
+    - 3SIMG_L1C_ASIA_MER
+    - 3SIMG_L1C_SGP
+    - 3SIMG_L2B_CMK
+    - 3SIMG_L2B_CTP
+    - 3SIMG_L2B_HEM
+    - 3SIMG_L2B_IMC
+    - 3SIMG_L2B_LST
+    - 3SIMG_L2B_OLR
+    - 3SIMG_L2B_SST
+    - 3SIMG_L2B_UTH
+    - 3SIMG_L2C_CMP
+    - 3SIMG_L2C_FOG
+    - 3SIMG_L2C_INS
+    - 3SIMG_L2C_SNW
+    - 3SIMG_L2G_AOD
+    - 3SIMG_L2G_GPI
+    - 3SIMG_L2G_IMR
+    - 3SIMG_L2G_WDP
+    - 3SIMG_L2P_AMV
+    - 3SIMG_L2P_FIR
+    - 3SIMG_L2P_IRW
+    - 3SIMG_L2P_IRW_MERGED
+    - 3SIMG_L2P_MRW
+    - 3SIMG_L2P_SMK
+    - 3SIMG_L2P_VSW
+    - 3SIMG_L2P_WVW
+    - 3SIMG_L2P_WV_MERGED
+    - 3SIMG_L3B_HEM_DLY
+    - 3SIMG_L3B_HEM_WKL
+    - 3SIMG_L3B_IMC_DLY
+    - 3SIMG_L3B_LST_DLY
+    - 3SIMG_L3B_OLR_DLY
+    - 3SIMG_L3B_OLR_WKL
+    - 3SIMG_L3B_SST_DLY
+    - 3SIMG_L3B_SST_WKL
+    - 3SIMG_L3B_SWR_DLY
+    - 3SIMG_L3B_UTH_DLY
+    - 3SIMG_L3B_UTH_WKL
+    - 3SIMG_L3C_INS_DLY
+    - 3SIMG_L3C_PET_DLY
+    - 3SIMG_L3G_GPI_DLY
+    - 3SIMG_L3G_GPI_WKL
+    - 3SIMG_L3G_IMR_DLY
+    - 3SIMG_L3G_IMR_WKL
+    - 3SSND_L1B_SA1
+    - 3SSND_L1B_SA2
+    - 3SSND_L1B_SB1
+    - 3SSND_L2B_SA1
+    - 3SSND_L2B_SA2
+    - 3SSND_L2B_SB1
+    products:
+      3SIMG_L1B_STD:
+        available: true
+        archive_files: 44471
+        archive_gb: 18393.9
+        mean_file_mb: 413.6
+        oldest: '2024-05-16T09:00:00+00:00'
+        newest: '2026-10-29T04:00:00+00:00'
+        filename_example: 3SIMG_29OCT2026_0400_L1B_STD_V01R00.h5
+        slot_minutes_utc:
+        - 0
+        - 30
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 8114
+          gb: 3362.8
+          completeness: 0.934
+        description: Level 1B full disk, 6 channels, satellite projection
+      3SIMG_L1C_ASIA_MER:
+        available: true
+        archive_files: 44493
+        archive_gb: 1054.7
+        mean_file_mb: 23.7
+        oldest: '2024-05-16T09:00:00+00:00'
+        newest: '2026-10-29T04:00:00+00:00'
+        filename_example: 3SIMG_29OCT2026_0400_L1C_ASIA_MER_V01R00.h5
+        slot_minutes_utc:
+        - 0
+        - 30
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 8116
+          gb: 196.8
+          completeness: 0.934
+        description: Level 1C Asia sector, Mercator projection
+      3SIMG_L2B_CMK:
+        available: true
+        archive_files: 38260
+        archive_gb: 349.1
+        mean_file_mb: 9.1
+        oldest: '2024-06-11T09:30:00+00:00'
+        newest: '2026-10-29T04:00:00+00:00'
+        filename_example: 3SIMG_29OCT2026_0400_L2B_CMK_V01R00.h5
+        slot_minutes_utc:
+        - 0
+        - 30
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 6997
+          gb: 64.0
+          completeness: 0.805
+        description: Level 2 cloud mask (label)
+      3SIMG_L2B_CTP:
+        available: true
+        archive_files: 36010
+        archive_gb: 71.9
+        mean_file_mb: 2.0
+        oldest: '2024-07-13T01:30:00+00:00'
+        newest: '2026-10-29T04:00:00+00:00'
+        filename_example: 3SIMG_29OCT2026_0400_L2B_CTP_V01R00.h5
+        slot_minutes_utc:
+        - 0
+        - 30
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 6974
+          gb: 15.1
+          completeness: 0.803
+        description: Level 2 cloud top pressure / temperature
+      3SIMG_L2C_FOG:
+        available: true
+        archive_files: 28708
+        archive_gb: 3.1
+        mean_file_mb: 0.1
+        oldest: '2024-05-16T14:30:00+00:00'
+        newest: '2026-10-29T00:30:00+00:00'
+        filename_example: 3SIMG_29OCT2026_0030_L2C_FOG_V01R00.h5
+        slot_minutes_utc:
+        - 0
+        - 30
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 5281
+          gb: 0.6
+          completeness: 0.608
+        description: Level 2 fog flag (winter IGP check)
+      3SIMG_L2C_INS:
+        available: true
+        archive_files: 36619
+        archive_gb: 707.4
+        mean_file_mb: 19.3
+        oldest: '2024-06-14T09:30:00+00:00'
+        newest: '2026-10-29T04:00:00+00:00'
+        filename_example: 3SIMG_29OCT2026_0400_L2C_INS_V01R00.h5
+        slot_minutes_utc:
+        - 0
+        - 30
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 6498
+          gb: 135.5
+          completeness: 0.748
+        description: Level 2 surface insolation (Goal 2)
+      3SIMG_L2P_AMV:
+        available: true
+        archive_files: 36773
+        archive_gb: 29.4
+        mean_file_mb: 0.8
+        oldest: '2024-05-16T11:00:00+00:00'
+        newest: '2026-10-29T04:00:00+00:00'
+        filename_example: 3SIMG_29OCT2026_0400_L2P_AMV_V01R00.h5
+        slot_minutes_utc:
+        - 0
+        - 30
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 7267
+          gb: 5.8
+          completeness: 0.836
+        description: Level 2 atmospheric motion vectors (motion cross-check)
+  INSAT-3DR:
+    collections:
+    - 3RIMG_L1B_STD
+    - 3RIMG_L1C_ASIA_MER
+    - 3RIMG_L1C_SGP
+    - 3RIMG_L2B_CMK
+    - 3RIMG_L2B_CTP
+    - 3RIMG_L2B_HEM
+    - 3RIMG_L2B_IMC
+    - 3RIMG_L2B_LST
+    - 3RIMG_L2B_OLR
+    - 3RIMG_L2B_SST
+    - 3RIMG_L2B_UTH
+    - 3RIMG_L2C_CMP
+    - 3RIMG_L2C_FOG
+    - 3RIMG_L2C_INS
+    - 3RIMG_L2C_SNW
+    - 3RIMG_L2G_AOD
+    - 3RIMG_L2G_GPI
+    - 3RIMG_L2G_IMR
+    - 3RIMG_L2G_WDP
+    - 3RIMG_L2P_FIR
+    - 3RIMG_L2P_IRW
+    - 3RIMG_L2P_IRW_MERGED
+    - 3RIMG_L2P_MRW
+    - 3RIMG_L2P_SMK
+    - 3RIMG_L2P_VSW
+    - 3RIMG_L2P_WVW
+    - 3RIMG_L2P_WV_MERGED
+    - 3RIMG_L3B_HEM_DLY
+    - 3RIMG_L3B_HEM_WKL
+    - 3RIMG_L3B_OLR_DLY
+    - 3RIMG_L3B_OLR_WKL
+    - 3RIMG_L3B_SST_DLY
+    - 3RIMG_L3B_SST_WKL
+    - 3RIMG_L3B_UTH_DLY
+    - 3RIMG_L3B_UTH_WKL
+    - 3RIMG_L3C_INS_DLY
+    - 3RIMG_L3C_PET_DLY
+    - 3RIMG_L3G_GPI_DLY
+    - 3RIMG_L3G_GPI_WKL
+    - 3RIMG_L3G_IMR_DLY
+    - 3RIMG_L3G_IMR_WKL
+    - 3RSND_L1B_SA1
+    - 3RSND_L1B_SA2
+    - 3RSND_L1B_SB1
+    - 3RSND_L2B_SA1
+    - 3RSND_L2B_SA2
+    - 3RSND_L2B_SB1
+    products:
+      3RIMG_L1B_STD:
+        available: true
+        archive_files: 181940
+        archive_gb: 74305.6
+        mean_file_mb: 408.4
+        oldest: '2016-10-11T00:15:00+00:00'
+        newest: '2026-10-29T04:15:00+00:00'
+        filename_example: 3RIMG_29OCT2026_0415_L1B_STD_V01R00.h5
+        slot_minutes_utc:
+        - 15
+        - 45
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 7848
+          gb: 3361.8
+          completeness: 0.903
+        description: Level 1B full disk, 6 channels, satellite projection
+      3RIMG_L1C_ASIA_MER:
+        available: true
+        archive_files: 181937
+        archive_gb: 3886.6
+        mean_file_mb: 21.4
+        oldest: '2016-10-03T06:15:00+00:00'
+        newest: '2026-10-29T04:15:00+00:00'
+        filename_example: 3RIMG_29OCT2026_0415_L1C_ASIA_MER_V01R00.h5
+        slot_minutes_utc:
+        - 15
+        - 45
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 7857
+          gb: 190.2
+          completeness: 0.904
+        description: Level 1C Asia sector, Mercator projection
+      3RIMG_L2B_CMK:
+        available: true
+        archive_files: 166069
+        archive_gb: 1510.0
+        mean_file_mb: 9.1
+        oldest: '2016-10-11T00:45:00+00:00'
+        newest: '2026-10-29T04:15:00+00:00'
+        filename_example: 3RIMG_29OCT2026_0415_L2B_CMK_V01R00.h5
+        slot_minutes_utc:
+        - 15
+        - 45
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 7026
+          gb: 64.5
+          completeness: 0.809
+        description: Level 2 cloud mask (label)
+      3RIMG_L2B_CTP:
+        available: true
+        archive_files: 130627
+        archive_gb: 278.4
+        mean_file_mb: 2.1
+        oldest: '2018-11-30T00:15:00+00:00'
+        newest: '2026-10-29T04:15:00+00:00'
+        filename_example: 3RIMG_29OCT2026_0415_L2B_CTP_V01R00.h5
+        slot_minutes_utc:
+        - 15
+        - 45
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 7023
+          gb: 16.3
+          completeness: 0.808
+        description: Level 2 cloud top pressure / temperature
+      3RIMG_L2C_FOG:
+        available: true
+        archive_files: 129159
+        archive_gb: 14.2
+        mean_file_mb: 0.1
+        oldest: '2016-10-26T04:15:00+00:00'
+        newest: '2026-10-29T04:15:00+00:00'
+        filename_example: 3RIMG_29OCT2026_0415_L2C_FOG_V01R00.h5
+        slot_minutes_utc:
+        - 15
+        - 45
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 6054
+          gb: 0.7
+          completeness: 0.697
+        description: Level 2 fog flag (winter IGP check)
+      3RIMG_L2C_INS:
+        available: true
+        archive_files: 148590
+        archive_gb: 2628.1
+        mean_file_mb: 17.7
+        oldest: '2016-11-09T08:14:00+00:00'
+        newest: '2026-10-29T04:15:00+00:00'
+        filename_example: 3RIMG_29OCT2026_0415_L2C_INS_V01R00.h5
+        slot_minutes_utc:
+        - 15
+        - 45
+        window:
+          start: '2026-05-01'
+          end: '2026-10-28'
+          files: 6486
+          gb: 129.3
+          completeness: 0.747
+        description: Level 2 surface insolation (Goal 2)
+      3RIMG_L2P_AMV:
+        available: false
+        error: '500 Server Error:  for url: https://mosdac.gov.in/apios/datasets.json?datasetId=3RIMG_L2P_AMV&count=1&startIndex=1'
+        description: Level 2 atmospheric motion vectors (motion cross-check)

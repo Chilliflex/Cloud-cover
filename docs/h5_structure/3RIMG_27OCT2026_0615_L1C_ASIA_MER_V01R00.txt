@@ -1,0 +1,291 @@
+# 3RIMG_27OCT2026_0615_L1C_ASIA_MER_V01R00.h5
+size: 28.2 MB
+
+## root attributes
+  Acquisition_Date = 27OCT2026
+  Acquisition_End_Time = 27-OCT-2026T06:42:38
+  Acquisition_Start_Time = 27-OCT-2026T06:15:45
+  Acquisition_Time_in_GMT = 0615
+  Attitude_Source = STAR
+  Datum = WGS84
+  Ellipsoid = WGS84
+  FastScan_Linearity_Enabled = no
+  Ground_Station = BES,SAC/ISRO,Ahmedabad,INDIA.
+  HDF_Product_File_Name = 3RIMG_27OCT2026_0615_L1C_ASIA_MER_V01R00.h5
+  Imaging_Mode = FULL FRAME
+  Nominal_Altitude(km) = [36000.0]
+  Nominal_Central_Point_Coordinates(degrees)_Latitude_Longitude = [0.0, 74.0]
+  Observed_Altitude(km) = [35757.102578]
+  Output_Format = hdf5-1.8.8
+  Processing_Level = L1C
+  Product_Creation_Time = 2026-10-27T12:20:07
+  Product_Type = SECTOR
+  Radiometric_Calibration_Type = LAB CALIBRATED
+  Sat_Azimuth(Degrees) = [311.116852]
+  Sat_Elevation(Degrees) = [89.785973]
+  Satellite_Name = INSAT-3DR
+  Sensor_Id = IMG
+  Sensor_Name = IMAGER
+  SlowScan_Linearity_Enabled = no
+  Software_Version = 1.0
+  Station_Id = BES
+  Sun_Azimuth(Degrees) = [158.669403]
+  Sun_Elevation(Degrees) = [76.251289]
+  Unique_Id = 3RIMG_27OCT2026_0615_ASIA_MER
+  conventions = CF-1.6
+  institute = BES,SAC/ISRO,Ahmedabad,INDIA.
+  left_longitude = [44.5]
+  lower_latitude = [-10.0]
+  right_longitude = [110.0]
+  source = BES,SAC/ISRO,Ahmedabad,INDIA.
+  title = 3RIMG_27OCT2026_0615_ASIA_MER_L1C
+  upper_latitude = [45.5]
+
+## datasets
+GreyCount  shape=(1024,) dtype=int32  min=0 max=1023
+    @CLASS = DIMENSION_SCALE
+    @REFERENCE_LIST = array(11,) {'names': ['dataset', 'dimension'], 'formats': ['O', '<i4'], 'offsets': [0, 8], 'itemsize': 16}
+IMG_MIR  shape=(1, 1616, 1737) dtype=uint16  min=131 max=994
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [1023]
+    @bandwidth = [0.20000000298023224]
+    @bits_per_pixel = [10]
+    @central_wavelength = [3.9070000648498535]
+    @grid_mapping = Projection_Information
+    @invert = true
+    @lab_radiance_add_offset = [-0.004833589773625135]
+    @lab_radiance_add_offset_gsics = [-0.011996200308203697]
+    @lab_radiance_quad = [-2.00028e-12]
+    @lab_radiance_quad_gsics = [-2.36622e-12]
+    @lab_radiance_scale_factor = [0.0002947089960798621]
+    @lab_radiance_scale_factor_gsics = [0.0003486250061541796]
+    @long_name = Middle Infrared Count
+    @radiance_units = mW.cm-2.sr-1.micron-1
+    @resolution = [4.0]
+    @resolution_unit = km
+    @wavelength_unit = micron
+IMG_MIR_RADIANCE  shape=(1024,) dtype=float32  min=0 max=0.3446
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = true
+    @long_name = Middle Infrared Radiance
+    @units = mW.cm-2.sr-1.micron-1
+IMG_MIR_TEMP  shape=(1024,) dtype=float32  min=179.7 max=339.8
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = true
+    @long_name = Middle Infrared Brightness Temperature
+    @units = K
+IMG_SWIR  shape=(1, 1616, 1737) dtype=uint16  min=31 max=897
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [0]
+    @bandwidth = [0.15000000596046448]
+    @bits_per_pixel = [10]
+    @central_wavelength = [1.625]
+    @grid_mapping = Projection_Information
+    @invert = false
+    @lab_radiance_add_offset = [-0.19753199815750122]
+    @lab_radiance_add_offset_gsics = [-0.19753199815750122]
+    @lab_radiance_quad = [0.0]
+    @lab_radiance_quad_gsics = [0.0]
+    @lab_radiance_scale_factor = [0.008130200207233429]
+    @lab_radiance_scale_factor_gsics = [0.008130200207233429]
+    @long_name = Shortwave Infrared Count
+    @radiance_units = mW.cm-2.sr-1.micron-1
+    @resolution = [4.0]
+    @resolution_unit = km
+    @wavelength_unit = micron
+IMG_SWIR_RADIANCE  shape=(1024,) dtype=float32  min=0 max=6.7
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = false
+    @long_name = Shortwave Infrared Radiance
+    @units = mW.cm-2.sr-1.micron-1
+IMG_TIR1  shape=(1, 1616, 1737) dtype=uint16  min=325 max=953
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [1023]
+    @bandwidth = [1.0]
+    @bits_per_pixel = [10]
+    @central_wavelength = [10.78499984741211]
+    @grid_mapping = Projection_Information
+    @invert = true
+    @lab_radiance_add_offset = [-0.014871800318360329]
+    @lab_radiance_add_offset_gsics = [-0.17022499442100525]
+    @lab_radiance_quad = [-4.23297e-07]
+    @lab_radiance_quad_gsics = [-5.83443e-07]
+    @lab_radiance_scale_factor = [0.0017001000232994556]
+    @lab_radiance_scale_factor_gsics = [0.0023433000314980745]
+    @long_name = Thermal Infrared1 Count
+    @radiance_units = mW.cm-2.sr-1.micron-1
+    @resolution = [4.0]
+    @resolution_unit = km
+    @wavelength_unit = micron
+IMG_TIR1_RADIANCE  shape=(1024,) dtype=float32  min=0 max=1.616
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = true
+    @long_name = Thermal Infrared1 Radiance
+    @units = mW.cm-2.sr-1.micron-1
+IMG_TIR1_TEMP  shape=(1024,) dtype=float32  min=179.9 max=338.5
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = true
+    @long_name = Thermal Infrared1 Brightness Temperature
+    @units = K
+IMG_TIR2  shape=(1, 1616, 1737) dtype=uint16  min=370 max=953
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [1023]
+    @bandwidth = [1.0]
+    @bits_per_pixel = [10]
+    @central_wavelength = [11.965999603271484]
+    @grid_mapping = Projection_Information
+    @invert = true
+    @lab_radiance_add_offset = [-0.012393999844789505]
+    @lab_radiance_add_offset_gsics = [-0.16438600420951843]
+    @lab_radiance_quad = [-4.33804e-07]
+    @lab_radiance_quad_gsics = [-6.40373e-07]
+    @lab_radiance_scale_factor = [0.0015407099854201078]
+    @lab_radiance_scale_factor_gsics = [0.002274370053783059]
+    @long_name = Thermal Infrared2 Count
+    @radiance_units = mW.cm-2.sr-1.micron-1
+    @resolution = [4.0]
+    @resolution_unit = km
+    @wavelength_unit = micron
+IMG_TIR2_RADIANCE  shape=(1024,) dtype=float32  min=0 max=1.492
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = true
+    @long_name = Thermal Infrared2 Radiance
+    @units = mW.cm-2.sr-1.micron-1
+IMG_TIR2_TEMP  shape=(1024,) dtype=float32  min=179.9 max=340.1
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = true
+    @long_name = Thermal Infrared2 Brightness Temperature
+    @units = K
+IMG_VIS  shape=(1, 1616, 1737) dtype=uint16  min=41 max=938
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [0]
+    @bandwidth = [0.25]
+    @bits_per_pixel = [10]
+    @central_wavelength = [0.6499999761581421]
+    @grid_mapping = Projection_Information
+    @invert = false
+    @lab_radiance_add_offset = [-3.813849925994873]
+    @lab_radiance_add_offset_gsics = [-3.813849925994873]
+    @lab_radiance_quad = [0.0]
+    @lab_radiance_quad_gsics = [0.0]
+    @lab_radiance_scale_factor = [0.08847030252218246]
+    @lab_radiance_scale_factor_gsics = [0.08847030252218246]
+    @long_name = Visible Count
+    @radiance_units = mW.cm-2.sr-1.micron-1
+    @resolution = [4.0]
+    @resolution_unit = km
+    @wavelength_unit = micron
+IMG_VIS_ALBEDO  shape=(1024,) dtype=float32  min=0 max=100
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @invert = false
+    @long_name = Visible Albedo
+    @units = %
+IMG_VIS_RADIANCE  shape=(1024,) dtype=float32  min=0 max=52.4
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = false
+    @long_name = Visible Radiance
+    @units = mW.cm-2.sr-1.micron-1
+IMG_WV  shape=(1, 1616, 1737) dtype=uint16  min=804 max=998
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [1023]
+    @bandwidth = [0.6000000238418579]
+    @bits_per_pixel = [10]
+    @central_wavelength = [6.866000175476074]
+    @grid_mapping = Projection_Information
+    @invert = true
+    @lab_radiance_add_offset = [-0.011288999579846859]
+    @lab_radiance_add_offset_gsics = [-0.04112770035862923]
+    @lab_radiance_quad = [-2.06407e-07]
+    @lab_radiance_quad_gsics = [-2.76031e-07]
+    @lab_radiance_scale_factor = [0.0011383499950170517]
+    @lab_radiance_scale_factor_gsics = [0.001522329985164106]
+    @long_name = Water Vapor Count
+    @radiance_units = mW.cm-2.sr-1.micron-1
+    @resolution = [4.0]
+    @resolution_unit = km
+    @wavelength_unit = micron
+IMG_WV_RADIANCE  shape=(1024,) dtype=float32  min=0 max=1.227
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = true
+    @long_name = Water Vapor Radiance
+    @units = mW.cm-2.sr-1.micron-1
+IMG_WV_TEMP  shape=(1024,) dtype=float32  min=179.7 max=324.4
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [999.0]
+    @invert = true
+    @long_name = Water Vapor Brightness Temperature
+    @units = K
+Projection_Information  shape=(1,) dtype=int32  min=3.089e+08 max=3.089e+08 values=[308889528]
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object)]
+    @false_easting = [0.0]
+    @false_northing = [0.0]
+    @grid_mapping_name = mercator
+    @longitude_of_projection_origin = [77.25]
+    @lower_left_lat_lon(degrees) = [-10.0, 44.5]
+    @lower_right_lat_lon(degrees) = [-10.0, 110.0]
+    @semi_major_axis = [6378137.0]
+    @semi_minor_axis = [6356752.3142]
+    @standard_parallel = [17.75]
+    @upper_left_lat_lon(degrees) = [45.5, 44.5]
+    @upper_left_xy(meters) = [-3473242.733735, 5401854.420193]
+    @upper_right_lat_lon(degrees) = [45.5, 110.0]
+Sat_Azimuth  shape=(1, 1616, 1737) dtype=uint16  min=0 max=4.135e+04
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [65535]
+    @add_offset = [0.0]
+    @grid_mapping = Projection_Information
+    @long_name = Satellite Azimuth
+    @scale_factor = [0.009999999776482582]
+    @units = degree
+Sat_Elevation  shape=(1, 1616, 1737) dtype=int16  min=2783 max=9098
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [32767]
+    @add_offset = [0.0]
+    @grid_mapping = Projection_Information
+    @long_name = Satellite Elevation
+    @scale_factor = [0.009999999776482582]
+    @units = degree
+Sun_Azimuth  shape=(1, 1616, 1737) dtype=uint16  min=9912 max=2.627e+04
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [65535]
+    @add_offset = [0.0]
+    @grid_mapping = Projection_Information
+    @long_name = Sun Azimuth
+    @scale_factor = [0.009999999776482582]
+    @units = degree
+Sun_Elevation  shape=(1, 1616, 1737) dtype=int16  min=2392 max=8818
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [32767]
+    @add_offset = [0.0]
+    @grid_mapping = Projection_Information
+    @long_name = Sun Elevation
+    @scale_factor = [0.009999999776482582]
+    @units = degree
+X  shape=(1737,) dtype=float64  min=-3.473e+06 max=3.473e+06
+    @CLASS = DIMENSION_SCALE
+    @REFERENCE_LIST = array(10,) {'names': ['dataset', 'dimension'], 'formats': ['O', '<i4'], 'offsets': [0, 8], 'itemsize': 16}
+    @long_name = x coordinate of projection
+    @standard_name = projection_x_coordinate
+    @units = m
+Y  shape=(1616,) dtype=float64  min=-1.059e+06 max=5.402e+06
+    @CLASS = DIMENSION_SCALE
+    @REFERENCE_LIST = array(10,) {'names': ['dataset', 'dimension'], 'formats': ['O', '<i4'], 'offsets': [0, 8], 'itemsize': 16}
+    @long_name = y coordinate of projection
+    @standard_name = projection_y_coordinate
+    @units = m
+proj_dim  shape=(1,) dtype=int32  min=0 max=0 values=[0]
+    @CLASS = DIMENSION_SCALE
+    @REFERENCE_LIST = [(<HDF5 object reference>, 0)]
+time  shape=(1,) dtype=float64  min=1.411e+07 max=1.411e+07 values=[14106615]
+    @CLASS = DIMENSION_SCALE
+    @REFERENCE_LIST = array(10,) {'names': ['dataset', 'dimension'], 'formats': ['O', '<i4'], 'offsets': [0, 8], 'itemsize': 16}
+    @units = minutes since 2000-01-01 00:00:00

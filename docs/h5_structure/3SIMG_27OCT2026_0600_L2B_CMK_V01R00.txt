@@ -1,0 +1,65 @@
+# 3SIMG_27OCT2026_0600_L2B_CMK_V01R00.h5
+size: 9.6 MB
+
+## root attributes
+  Acquisition_Date = 27OCT2026
+  Acquisition_End_Time = 27-OCT-2026T06:27:19.547
+  Acquisition_Start_Time = 27-OCT-2026T06:00:25.822
+  Acquisition_Time_in_GMT = 0600
+  Ground_Station = BES,SAC/ISRO,Ahmedabad,INDIA.
+  HDF_Product_File_Name = 3SIMG_27OCT2026_0600_L2B_CMK_V01R00.h5
+  Nominal_Altitude(km) = [36000.0]
+  Nominal_Central_Point_Coordinates(degrees)_Latitude_Longitude = [0.0, 82.0]
+  Output_Format = hdf5-1.8.8
+  Processing_Level = L2B
+  Product_Creation_Time = 2026-10-27T12:03:00
+  Product_Type = GEOPHY
+  Satellite_Name = INSAT-3DS
+  Sensor_Id = IMG
+  Sensor_Name = IMAGER
+  Software_Version = 1.0
+  Station_Id = BES
+  Unique_Id = 3SIMG_27OCT2026_0600
+  conventions = CF-1.6
+  institute = BES,SAC/ISRO,Ahmedabad,INDIA.
+  left_longitude = [0.8432964086532593]
+  lower_latitude = [-81.0415267944336]
+  right_longitude = [163.15670776367188]
+  source = BES,SAC/ISRO,Ahmedabad,INDIA.
+  title = 3SIMG_27OCT2026_0600_L2B
+  upper_latitude = [81.0415267944336]
+
+## datasets
+CMK  shape=(1, 2816, 2805) dtype=int8  min=0 max=3 values=[0, 1, 2, 3]
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [9]
+    @coordinates = time Latitude Longitude
+    @flag_meanings = Clear Cloudy Probably_Clear Probably_Cloudy
+    @flag_values = [0, 1, 2, 3]
+    @long_name = Cloud Mask
+GeoX  shape=(2805,) dtype=int32  min=0 max=2804
+    @CLASS = DIMENSION_SCALE
+    @REFERENCE_LIST = [(<HDF5 object reference>, 2), (<HDF5 object reference>, 1), (<HDF5 object reference>, 1)]
+GeoY  shape=(2816,) dtype=int32  min=0 max=2815
+    @CLASS = DIMENSION_SCALE
+    @REFERENCE_LIST = [(<HDF5 object reference>, 1), (<HDF5 object reference>, 0), (<HDF5 object reference>, 0)]
+Latitude  shape=(2816, 2805) dtype=int16  min=-8104 max=8104
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [32767]
+    @add_offset = [0.0]
+    @long_name = latitude
+    @scale_factor = [0.009999999776482582]
+    @standard_name = latitude
+    @units = degrees_north
+Longitude  shape=(2816, 2805) dtype=int16  min=84 max=1.632e+04
+    @DIMENSION_LIST = [array([<HDF5 object reference>], dtype=object), array([<HDF5 object reference>], dtype=object)]
+    @_FillValue = [32767]
+    @add_offset = [0.0]
+    @long_name = longitude
+    @scale_factor = [0.009999999776482582]
+    @standard_name = longitude
+    @units = degrees_east
+time  shape=(1,) dtype=float64  min=1.411e+07 max=1.411e+07 values=[14106600]
+    @CLASS = DIMENSION_SCALE
+    @REFERENCE_LIST = [(<HDF5 object reference>, 0)]
+    @units = minutes since 2000-01-01 00:00:00

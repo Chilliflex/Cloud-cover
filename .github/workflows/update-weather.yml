@@ -1,0 +1,62 @@
+name: Update Weather
+
+on:
+  schedule:
+    # Every 30 minutes (UTC). GitHub may delay scheduled runs under load.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+# Never let two update runs overlap or race on the push.
+concurrency:
+  group: update-weather
+  cancel-in-progress: false
+
+jobs:
+  update-weather:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+          cache-dependency-path: updater/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r updater/requirements.txt
+
+      - name: Run weather update
+        env:
+          MOSDAC_USERNAME: ${{ secrets.MOSDAC_USERNAME }}
+          MOSDAC_PASSWORD: ${{ secrets.MOSDAC_PASSWORD }}
+        run: python updater/update_thunderstorms.py
+
+      - name: Commit updated data (only if changed)
+        run: |
+          git config user.name "Railway Weather Bot"
+          git config user.email "railway@weather.com"
+
+          FILES="public/cloud-grid.json public/thunderstorm-cells.json"
+
+          if git diff --quiet -- $FILES; then
+            echo "No data changes — nothing to commit."
+            exit 0
+          fi
+
+          git add $FILES
+          git commit -m "Automatic weather update"
+
+          # Rebase onto any changes pushed meanwhile, then push (with one retry).
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}" || {
+            echo "Push rejected, retrying after rebase..."
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          }

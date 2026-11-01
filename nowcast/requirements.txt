@@ -1,0 +1,13 @@
+# Phase 0
+requests>=2.31
+pyyaml>=6.0
+h5py>=3.10
+numpy>=1.26
+
+# Phase 1 archive
+xarray>=2024.6
+zarr>=3.0
+dask[array]>=2024.6
+scipy>=1.11
+pandas>=2.1
+matplotlib>=3.8

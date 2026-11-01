@@ -1,0 +1,4 @@
+# Time axis of data/inputs.zarr and data/labels.zarr (UTC days, inclusive).
+# Fixed when the archive is first created; backfill runs must fall inside it.
+start: 2026-05-01
+end: 2026-10-28

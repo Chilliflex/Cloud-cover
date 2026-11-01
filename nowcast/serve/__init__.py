@@ -1,0 +1,1 @@
+"""India cloud nowcast package."""

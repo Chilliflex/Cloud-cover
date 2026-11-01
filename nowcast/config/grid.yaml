@@ -1,0 +1,11 @@
+# Fixed analysis grid for all stores (see docs/DATA_FLOW.md)
+crs: EPSG:4326
+lat_min: 6.0
+lat_max: 38.0
+lon_min: 66.0
+lon_max: 98.0
+resolution_deg: 0.04
+ny: 800
+nx: 800
+time_step_minutes: 15
+timezone: UTC
